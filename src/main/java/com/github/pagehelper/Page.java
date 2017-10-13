@@ -63,10 +63,12 @@ public class Page<E> extends ArrayList<E> {
     }
 
     public Page(int pageNum, int pageSize) {
+    	
         this(pageNum, pageSize, SQL_COUNT);
     }
 
     public Page(int pageNum, int pageSize, boolean count) {
+    	
         this(pageNum, pageSize, count ? Page.SQL_COUNT : Page.NO_SQL_COUNT);
     }
 
@@ -93,6 +95,7 @@ public class Page<E> extends ArrayList<E> {
     }
 
     public List<E> getResult() {
+    	System.out.println("111");
         return this;
     }
 
