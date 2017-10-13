@@ -97,7 +97,7 @@ public class Page<E> extends ArrayList<E> {
     }
 
     public int getPages() {
-    	System.out.println("m1");
+
         return pages;
     }
 
